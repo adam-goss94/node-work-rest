@@ -27,7 +27,7 @@ class App extends React.Component {
     const bell = new Audio('./sounds/bell.wav');
     bell.play();
   };
-  
+
   step = () => {
     this.setState({time: this.state.time - 1});
     if(this.state.time == 0) {
